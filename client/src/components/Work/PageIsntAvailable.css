@@ -1,0 +1,30 @@
+
+@media screen and (min-width: 601px) {
+    .Heading_one{
+      font-size:70px;
+      text-align: center;
+      justify-content: center;
+    }
+    .sub_heading{
+        font-size: 50px;
+        text-align: center;
+        justify-content: center;
+        line-height: 6;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .Heading_one {
+      font-size: 35px;
+      text-align: center;
+      justify-content: center;
+     margin-top: 50px;
+    }
+    .sub_heading{
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        line-height: 16;
+    }
+  }

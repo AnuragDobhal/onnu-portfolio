@@ -1,0 +1,33 @@
+.insta__container{
+   height: 130px;
+  row-gap: 2rem;
+  text-align: center;
+  background-color:rgb(21, 29, 31);
+  border-radius: 20px;
+  box-shadow:
+rgba(113, 113, 113, 0.15) -5px -5px 11px, rgba(0, 0, 0, 0.15) 5px 5px 11px;
+}
+.insta__subtitle{
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.insta__text{
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.5;
+}
+
+.insta__tech{
+  display: inline-block;
+  background-color:rgb(21, 29, 31);
+  color: #fff;
+  padding: .10rem 1rem; 
+  border-radius: .5rem;
+  border: 1px solid rgb(16, 25, 27);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.insta__tech:hover{
+  box-shadow: 0 4px 18px rgba(170, 164, 164, 0.15);
+  border: 1px solid #ffffff;
+}

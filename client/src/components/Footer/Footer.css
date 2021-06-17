@@ -1,0 +1,28 @@
+.footer{
+    background-color:rgb(16, 25, 27);
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem 0;
+    opacity: 0.8;
+  }
+  .footer__title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    opacity: 0.6;
+  }
+  .footer__social{
+    margin-bottom: 2rem;
+  }
+  .footer__icon{
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 1rem;
+    transition: 0.3s;
+    display: inline;
+    opacity: 0.5;
+  }
+  .footer__icon:hover{
+    opacity: 1;
+    color: #0f4bf0;
+  }

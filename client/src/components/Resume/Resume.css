@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+.container {
+  max-width: 800px;
+  background: rgb(255, 255, 255);
+  margin: 0px auto 0px;
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;
+  padding: 40px;
+  margin-top: 50px;
+  color: #000;
+}
+.position{
+  text-transform: uppercase;
+}
+.header {
+  margin-bottom: 10px;
+}
+.header .full-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.header .first-name {
+  font-weight: 700;
+  color: #0036c9;
+}
+.header .last-name {
+ font-weight: 300 !important;
+ color: #0036c9;
+}
+.header .contact-info {
+  margin-bottom: 20px;
+}
+.header .email,
+.header .phone {
+  color: #999;
+  font-weight: 300;
+  font-size: 16px;
+}
+.header .email-val , .phone-val{
+ color: #000;
+ font-size: 15px;
+}
+.header .separator {
+  height: 20px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0px 20px;
+}
+.header .position {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #0036c9;
+}
+span.desc{
+  color: rgb(0, 0, 0);
+  font-family: 'Mate SC', serif;
+  font-weight: 200;
+  margin: 0px 0px;
+}
+.right .desc{
+  font-size: 12px;
+  float: right;
+}
+.details {
+  line-height: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.details .section {
+  margin-bottom: 10px;
+}
+.details .section:last-of-type {
+  margin-bottom: 0px;
+}
+.details .section__title {
+  letter-spacing: 2px;
+  color: #0036c9;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.details .section__list-item {
+  font-family: 'Mate SC', serif;
+  margin-bottom: 40px;
+}
+.details .section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+.details .left,
+.details .right {
+  vertical-align: top;
+  display: inline-block;
+}
+.details .left {
+  width: 60%;
+}
+.details .right {
+  text-align: right;
+  width: 39%;
+}
+.details .name {
+ font-weight: 200;
+ font-family: 'Mate SC', serif;
+}
+.details a {
+  text-decoration: none;
+  color: #000;
+  font-style: italic;
+}
+
+.details .skills__item {
+  margin-bottom: 10px;
+}
+.details .skills__item .right input {
+  display: none;
+}
+.details .skills__item .right label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #c4c3f3;
+  border-radius: 20px;
+  margin-right: 3px;
+}
+.details .skills__item .right input:checked + label {
+  background: #0036c9;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  letter-spacing: 2px;
+  color: #0036c9;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.interest ul li {
+  list-style: none;
+  color: black;
+  font-weight: 500;
+  margin: 10px 0;
+  font-family: 'Mate SC', serif;
+}
+.interest ul li .fa {
+  color: #0036c9;
+  font-size: 18px;
+  width: 20px;
+  justify-content: space-between;
+}
+.btn_print{
+  display: inline-block;
+  background-color:rgb(16, 25, 27);
+  color: #fff;
+  float: right;
+  font-size: 13px;
+  padding: 10px;
+  margin-right: 50px;
+  border-radius: .5rem;
+  border: 1px solid #0036c9;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.btn_print:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+  transform: scale(.90);
+  background-color: #0036c9;
+  border: 1px solid #ffffff;
+  color: rgb(16, 25, 27);
+}
+
+@media (max-width: 1000px) {
+  .header .email-val , .phone-val{
+    color: #000;
+    font-size: 15px;
+   }
+   .header .email,
+   .header .phone {
+      color: #999;
+      font-weight: 300;
+      font-size: 14px;
+}
+
+  .interest ul {
+      grid-template-columns: repeat(2,1fr);
+  }
+  .btn_print{
+    padding: 4px;
+    margin-right: 3px;
+    font-size: 11px;
+   }
+   .details .skills__item .right label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #c4c3f3;
+    border-radius: 20px;
+    margin-right: 3px;
+  }
+  .details .skills__item .right input:checked + label {
+    background: #0036c9;
+  }
+}
+@media (max-width: 600px) {
+
+  .header .email-val , .phone-val{
+    color: #000;
+    font-size: 12px;
+   }
+   .header .email,
+   .header .phone {
+      color: #999;
+      font-weight: 300;
+      font-size: 14px;  
+}
+.header .phone{
+  margin: 0px 15px;
+  display: inline-block;
+}
+
+.header .separator {
+  display: none;
+}
+.right .desc{
+  font-size: 10px;
+  
+}
+  .interest ul {
+      grid-template-columns: repeat(1,1fr);
+  }
+ .btn_print{
+  padding: 4px;
+  margin-right: 3px;
+  font-size: 11px;
+ }
+ .header .full-name {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.details .skills__item .right label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #c4c3f3;
+  border-radius: 20px;
+  margin-right: 3px;
+}
+.details .skills__item .right input:checked + label {
+  background: #0036c9;
+}
+}

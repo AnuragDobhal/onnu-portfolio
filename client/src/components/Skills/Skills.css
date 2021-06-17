@@ -1,0 +1,32 @@
+
+.skills__container{
+    row-gap: 2rem;
+    text-align: center;
+  
+  }
+  .skills__subtitle{
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .skills__text{
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* ===== MEDIA QUERIES=====*/
+/* @media screen and (min-width: 768px){
+    .section-title{
+      margin-bottom: var(--mb-6);
+    }
+    .section-title::after{
+      width: 80px;
+      top: 3rem;
+    }
+     .skills__container{
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      text-align: initial;
+    }
+   
+  } */
+  
