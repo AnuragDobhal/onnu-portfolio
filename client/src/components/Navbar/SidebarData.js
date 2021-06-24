@@ -2,8 +2,8 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
-
 import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
+
 export const SidebarData = [
   {
     title: 'Home',

@@ -10,7 +10,8 @@
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
-    
+    transition:0.5s;
+    color: rgb(255, 255, 255);
   }
   .menu-bars :hover{
     color: #0036c9;
