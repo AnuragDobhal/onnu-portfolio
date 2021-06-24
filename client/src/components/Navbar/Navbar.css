@@ -8,10 +8,12 @@
 
   .menu-bars {
     margin-left: 2rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
     background: none;
     transition:0.5s;
     color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius:50px;
   }
   .menu-bars :hover{
     color: #0036c9;

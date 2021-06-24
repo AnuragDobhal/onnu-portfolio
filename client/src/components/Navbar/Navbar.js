@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
-import FilterListOutlinedIcon from '@material-ui/icons/FilterListOutlined';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
@@ -18,7 +16,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
-            <FilterListOutlinedIcon  onClick={showSidebar} />
+            <FaIcons.FaBars onClick={showSidebar} />
           </Link>
         </div>
 
@@ -32,7 +30,7 @@ function Navbar() {
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
               <Link to='#' className='menu-bars'>
-                <CloseRoundedIcon/>
+                <AiIcons.AiOutlineClose />
               </Link>
             </li>
             {SidebarData.map((item, index) => {
