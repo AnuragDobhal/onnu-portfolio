@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 export const SidebarData = [
   {
     title: 'Home',
@@ -38,7 +39,7 @@ export const SidebarData = [
   {
     title: 'Tips & Ideas',
     path: '/tips',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    icon: <DeveloperModeIcon/>,
     cName: 'nav-text'
   },
 
