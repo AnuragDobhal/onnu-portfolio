@@ -22,7 +22,7 @@ function Navbar() {
 
   <Link to="./">
           <div>
-            <lable className="logo">Anurag</lable>
+            <lable className="logo">Anurag Dobhal</lable>
           </div>
   </Link>
         
