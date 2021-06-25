@@ -8,18 +8,18 @@
 
   .menu-bars {
     margin-left: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     background: none;
     transition:0.5s;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    border-radius:50px;
-  }
-  .menu-bars :hover{
-    color: #0036c9;
+    color: rgb(16, 25, 27) !important;
+    border-radius:50px ;
     cursor: pointer;
+
   }
-  
+   .menu-bars :hover{
+    color: #0036c9;
+  } 
+   
   a{
     text-decoration: none;
     color: #ffffff;
