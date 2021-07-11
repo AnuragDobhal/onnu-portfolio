@@ -76,7 +76,7 @@ body{
   margin-bottom: var(--mb-4);
   text-align: center;
 }
-.section-title::after{
+/* .section-title::after{
   position: absolute;
   content: "";
   width: 64px;
@@ -86,7 +86,7 @@ body{
   margin: auto;
   top: 2rem;
   background-color: var(--first-color);
-}
+} */
 .section{
   padding-top: 3rem;
   padding-bottom: 2rem;

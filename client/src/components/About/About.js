@@ -21,7 +21,7 @@ function About() {
             
             <div>
                 <h2 className="about__subtitle">
-                    Hi. I’m Anurag, Get ready to turn your ideas into reality. Please take a look around!
+                    Hi. I’m Anurag, Get ready to turn your ideas into reality. Please take a look around !
                     </h2>
                     <p className="about__text"> I am a Software Engineer. I completed my Bachelors in Information and Technology and Masters in Computer Science .
                     I specialized in building <b className="mern">Web applications</b> & <b className="mern">Android applications</b> specific to the 
