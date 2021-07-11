@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
 import Section from './components/Section/Section'
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
@@ -13,6 +12,7 @@ import Download from './components/DownloadFile/Download';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import PageIsntAvailable from "./components/Work/PageIsntAvailable"
 import Resume from './components/Resume/Resume';
+import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
@@ -20,19 +20,14 @@ function App() {
     <>
       <Router>
       <Switch>
-
-  
-
-
-
         <Route path="/about">
-          <Navbar/>
+  <Navbar/>
           <About/>
           <Footer/>
         </Route>
 
     <Route path="/skills">
-      <Navbar/>
+  <Navbar/>
       <Skills/>
       <Download/>
       {/* <Resume/> */}
@@ -40,39 +35,39 @@ function App() {
     </Route>
 
     <Route path="/resume">
-       <Navbar/>
+  <Navbar/>
        <Resume/>
        <Footer/>
     </Route>
 
         <Route path="/tips">
-          <Navbar/>
+      <Navbar/>
           <Insta/>
           <Footer/>
         </Route>
 
         <Route path="/work">
-          <Navbar/>
+      <Navbar/>
           <Work/>
           <Footer/>
         </Route>
 
 
     <Route path="/contact">
-      <Navbar/>
+  <Navbar/>
       <Contact/>
       <Footer/>
     </Route>
     
     <Route path="/PageIsntAvailable">
-       <Navbar/>
+  <Navbar/>
        <PageIsntAvailable/>
        <Footer/>
     </Route>
 
 
        <Route exact path="/">
-            <Navbar/>
+     <Navbar/>
             <Section/>
             <About/>
             <Skills/>

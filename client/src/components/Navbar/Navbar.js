@@ -1,53 +1,38 @@
-import React, { useState } from 'react';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
-import { Link } from 'react-router-dom';
-import { SidebarData } from './SidebarData';
-import './Navbar.css';
-import { IconContext } from 'react-icons';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { MenuList } from "./MenuList";
+import "./Navbar.css";
 
-function Navbar() {
-  const [sidebar, setSidebar] = useState(false);
+const Navbar = () => { 
+  const [clicked, setClicked] = useState(false);
+  const menuList = MenuList.map(({ url, title }, index) => {
+    return (
+      <li key={index}>
+        <NavLink exact to={url} activeClassName="active">
+          {title}
+        </NavLink>
+      </li>
+    );
+  });
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
 
   return (
-    <>
-      <IconContext.Provider value={{ color: '#fff' }}>
-        <div className='navbar'>
-          <Link to='#' className='menu-bars'>
-            <IoIcons.IoIosMenu onClick={showSidebar} />
-          </Link>
-        </div>
-
-  <Link to="./">
-          <div>
-            <lable className="logo">Anurag</lable>
-          </div>
-  </Link>
-        
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className='nav-menu-items' onClick={showSidebar}>
-            <li className='navbar-toggle'>
-              <Link to='#' className='menu-bars'>
-                <AiIcons.AiOutlineClose />
-              </Link>
-            </li>
-            {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      </IconContext.Provider>
-    </>
+    <nav>
+    <NavLink to="/">
+    <div className="logo">
+        ANU<font>RAG</font>
+      </div>
+    </NavLink>
+     
+      <div className="menu-icon" onClick={handleClick}>
+        <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+      </div>
+      <ul className={clicked ? "menu-list" : "menu-list close"}>{menuList}</ul>
+    </nav>
   );
-}
+};
 
 export default Navbar;

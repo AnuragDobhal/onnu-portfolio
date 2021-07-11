@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './Work.css'
 import { Link } from 'react-router-dom'
+import Aos from 'aos'
+import "aos/dist/aos.css";
 
 
 
 function Work() {
+    useEffect(()=>{
+        Aos.init({duration:2000});
+            },[])
     return (
-<section className="work section" id="work">
-    <h2 class="section-title">Work</h2>
+<section data-aos="fade-up" className="work section" id="work">
+    <h2 className="section-title">Work</h2>
         <div className="work__container bd-grid">
             <div className="work__img">
                 <Link to={{ pathname:"https://www.weazy.in/" }} target="_blank" >

@@ -26,7 +26,7 @@ function Footer() {
             </div>
         </Link>
         </div>
-            <p>&#169; 2020-2031 copyright all right reserved</p>
+            <p>&#169; 2021-2025 copyright all right reserved</p>
         </footer>
         </div>
     )

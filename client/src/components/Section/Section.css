@@ -56,19 +56,15 @@ body{
   color: var(--second-color);
   background-color:rgb(16, 25, 27);
 }
-h1,h2,p{
-  margin: 0;
-}
 
-a{
-  text-decoration: none;
-}
-/* img{
+
+
+ /* img{
   max-width: 100%;
   height: auto;
   display: block;
   display: none;
-} */
+}  */
 
 /*===== CLASS CSS ===== */
 
@@ -141,7 +137,10 @@ a{
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 295px;
+  /* width: 295px; */
+}
+.svg{
+ float: right;
 }
 
 /*BUTTONS*/

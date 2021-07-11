@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import './Insta.css'
+import Aos from 'aos'
+import "aos/dist/aos.css";
 
 function Insta() {
+    useEffect(()=>{
+        Aos.init({duration:2000});
+            },[])
     return (
         <div>
-        <section className="skills section" id="skills">
+        <section data-aos="fade-up" className="skills section" id="skills">
             <h2 className="section-title">Tips & Ideas</h2>
   
                 <div className="insta__container bd-grid">          
