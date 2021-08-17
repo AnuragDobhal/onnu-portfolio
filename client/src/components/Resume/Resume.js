@@ -17,8 +17,8 @@ class ComponentToPrint extends React.Component {
 <div className="container">
   <div className="header">
     <div className="full-name">
-      <span className="first-name">ANURAG</span> 
-      <span className="last-name">DOBHAL</span>
+      <span className="first-name">ANURAG Dobhal</span> 
+      {/* <span className="last-name">DOBHAL</span> */}
     </div>
     <div className="contact-info">
       <span className="email">Email: 
